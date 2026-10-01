@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stew0428-sketch.github.io/shichuzu/sitemap.xml

@@ -408,6 +408,36 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.faq {
+  margin: 22px 16px 0;
+  padding: 16px 14px 6px;
+  background: var(--card);
+  border-radius: 18px;
+}
+
+.faq h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.faq h3 {
+  margin: 16px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.faq p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.faq a { color: var(--ink); }
+
 .site-footer {
   padding: 22px 20px calc(22px + env(safe-area-inset-bottom));
   color: var(--muted);
