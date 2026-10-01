@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0e14">
+  <title>テストに参加する — しちゅーず開発室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sheet">
+    <header class="topbar">
+      <a class="back" id="back" href="index.html">戻る</a>
+    </header>
+    <header class="hero">
+      <p class="kicker" id="app-name">テスト</p>
+      <h1>テストに参加する</h1>
+      <p class="lede join-lead">Android と、普段使っている Google アカウントがあれば足ります。グループは、しちゅーず開発室のアプリで共通です。</p>
+    </header>
+    <ol class="steps">
+      <li>
+        <span>1</span>
+        <div>
+          <strong>グループに参加する</strong>
+          <p>下のボタンから Google グループに入ります。</p>
+        </div>
+      </li>
+      <li>
+        <span>2</span>
+        <div>
+          <strong>Google Play を開く</strong>
+          <p>スマホの Play と同じアカウントで、アプリのページを開きます。</p>
+        </div>
+      </li>
+      <li>
+        <span>3</span>
+        <div>
+          <strong>インストールして、一度起動する</strong>
+          <p>起動まで済ませると、テスターとしてカウントされます。</p>
+        </div>
+      </li>
+    </ol>
+    <ul class="cautions">
+      <li>iPhone ではインストールできません。</li>
+      <li>「テストを終了」は押さないでください。</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-seal" id="group" href="https://groups.google.com/g/effera-testers">グループに参加</a>
+      <a class="btn btn-ink" id="store" hidden>Google Play を開く</a>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script>
+    var id = new URLSearchParams(location.search).get("app");
+    var app = (window.SITE.apps || {})[id];
+    if (app) {
+      document.getElementById("app-name").textContent = app.name;
+      document.getElementById("back").href = app.page;
+      document.title = app.name + "のテスト参加 — しちゅーず開発室";
+      var store = document.getElementById("store");
+      store.href = app.store;
+      store.hidden = false;
+    }
+  </script>
+</body>
+</html>

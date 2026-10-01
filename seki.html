@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0e14">
+  <title>SEKI — しちゅーず開発室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sheet">
+    <header class="topbar">
+      <a class="back" href="index.html">一覧へ</a>
+    </header>
+    <div class="mast mast--seki">
+      <img src="assets/seki-icon.png" width="72" height="72" alt="">
+      <div>
+        <h1>SEKI</h1>
+        <p class="en">11×11 ボード戦略</p>
+        <span class="badge badge-test">テスト中</span>
+      </div>
+    </div>
+    <p class="lead">11×11マスの対戦ボードゲームです。CPU、同じスマホを挟んだ相手、オンラインの相手と指します。</p>
+    <section class="scene">
+      <img src="assets/shots/seki-home.jpg" alt="レーティング対戦、CPU対戦、2人対戦が並ぶSEKIの最初の画面">
+      <p>起動した直後の画面です。レーティング対戦、CPU対戦、2人対戦のどれで指すかを選びます。設定とルール説明のボタンも、この画面にあります。</p>
+    </section>
+    <section class="scene">
+      <video controls playsinline preload="metadata" poster="assets/shots/seki.jpg">
+        <source src="assets/clips/seki.mp4" type="video/mp4">
+      </video>
+      <p>対局中の盤です。上が赤、下が青で、それぞれキングを中心に駒が並んでいます。上の「市民の損害」と、下の棋譜で、いま何手目で何が動いたかが分かります。</p>
+    </section>
+    <div class="actions">
+      <a class="btn btn-seal" href="join.html?app=seki">テストに参加する</a>
+    </div>
+  </div>
+</body>
+</html>

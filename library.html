@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0e14">
+  <title>不思議の図書館 — しちゅーず開発室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sheet">
+    <header class="topbar">
+      <a class="back" href="index.html">一覧へ</a>
+    </header>
+    <div class="mast mast--library">
+      <img src="assets/library-icon.png" width="72" height="72" alt="">
+      <div>
+        <h1>不思議の図書館</h1>
+        <p class="en">漢字読み学習</p>
+        <span class="badge badge-test">テスト中</span>
+      </div>
+    </div>
+    <p class="lead">漢字のレベルに合わせて小説を読むアプリです。学年や級を選ぶと、その範囲で書かれた話が出てきます。</p>
+    <section class="scene">
+      <img src="assets/shots/library.jpg" alt="司書と、本を探す、本を読む、漢字の記録が並ぶ館内">
+      <p>館に入った画面です。本を探す、本を読む、話す、漢字の記録、本の共有から進みます。案内役が、今日はどんな本を探すかと聞いてきます。</p>
+    </section>
+    <section class="scene">
+      <img src="assets/shots/lib-chapters.jpg" alt="10級の本の章一覧。章の題はひらがな">
+      <p>10級の本を開いたところです。章の題はひらがなが中心で、全6章あります。下には、この本の続きを探すボタンと、文章がAIで作られているという注意が出ています。</p>
+    </section>
+    <section class="scene">
+      <img src="assets/shots/lib-reader.jpg" alt="ひらがな中心の本文。一部の漢字だけが青い">
+      <p>本文です。上に「10級 / 横書き」と出ていて、文はひらがな中心、一部の漢字だけが青字です。右上の Aa で文字の大きさを変え、下のボタンで前の章と次の章に移ります。</p>
+    </section>
+    <div class="actions">
+      <a class="btn btn-seal" href="join.html?app=library">テストに参加する</a>
+    </div>
+  </div>
+</body>
+</html>
