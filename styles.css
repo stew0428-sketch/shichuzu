@@ -187,15 +187,7 @@ h1 {
     radial-gradient(90px 60px at 88% 18%, rgba(255, 214, 140, 0.28), transparent 70%),
     #1a2744;
 }
-.mast--music {
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0 13px,
-      rgba(246, 241, 230, 0.16) 13px 14px
-    ),
-    #3a2e26;
-}
+.mast--music { background: #231238; }
 
 .mast img {
   width: 72px;
