@@ -9,7 +9,7 @@
 - [Effera](https://stew0428-sketch.github.io/shichuzu/effera.html): 動画編集アプリです。スマホの中の動画を開いて、テロップやエフェクトを指で載せます。アカウントは要りません。クローズドテスト中です。Google Play: https://play.google.com/store/apps/details?id=app.effera
 - [SEKI](https://stew0428-sketch.github.io/shichuzu/seki.html): 11×11マスの対戦ボードゲームです。CPU、同じスマホを挟んだ相手、オンラインの相手と指します。クローズドテスト中です。Google Play: https://play.google.com/store/apps/details?id=com.kingsclash.game
 - [不思議の図書館](https://stew0428-sketch.github.io/shichuzu/library.html): 漢字のレベルに合わせて小説を読むアプリです。学年や級を選ぶと、その範囲で書かれた話が出てきます。クローズドテスト中です。Google Play: https://play.google.com/store/apps/details?id=com.mkbooks.library
-- [FretDrop](https://stew0428-sketch.github.io/shichuzu/music.html): ギターの練習アプリです。曲を選んで弾き、マイクで音程が合っているかを見ます。公開準備中で、インストール用のリンクはまだありません。
+- [FretDrop](https://stew0428-sketch.github.io/shichuzu/music.html): ギターの練習アプリです。曲を選んで弾き、マイクで音程が合っているかを見ます。クローズドテスト中です。Google Play: https://play.google.com/store/apps/details?id=com.practicingmusic.practicing_music
 
 ## クローズドテスト
 

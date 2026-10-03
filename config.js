@@ -16,5 +16,10 @@ window.SITE = {
       page: "library.html",
       store: "https://play.google.com/store/apps/details?id=com.mkbooks.library",
     },
+    music: {
+      name: "FretDrop",
+      page: "music.html",
+      store: "https://play.google.com/store/apps/details?id=com.practicingmusic.practicing_music",
+    },
   },
 };
