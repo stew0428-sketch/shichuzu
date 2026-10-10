@@ -1,11 +1,6 @@
 window.SITE = {
   group: "https://groups.google.com/g/effera-testers",
   apps: {
-    effera: {
-      name: "Effera",
-      page: "effera.html",
-      store: "https://play.google.com/store/apps/details?id=app.effera",
-    },
     seki: {
       name: "SEKI",
       page: "seki.html",

@@ -151,6 +151,11 @@ h1 {
   color: white;
 }
 
+.badge-live {
+  background: var(--gold);
+  color: #0c0e14;
+}
+
 .badge-soon {
   border: 1px solid rgba(243, 240, 232, 0.28);
   color: var(--muted);
