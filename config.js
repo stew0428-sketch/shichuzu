@@ -16,5 +16,10 @@ window.SITE = {
       page: "music.html",
       store: "https://play.google.com/store/apps/details?id=com.practicingmusic.practicing_music",
     },
+    fon: {
+      name: "FON",
+      page: "fon.html",
+      store: "https://play.google.com/store/apps/details?id=com.jyanken.game",
+    },
   },
 };
