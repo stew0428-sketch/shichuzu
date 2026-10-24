@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0G8CTQDV0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q0G8CTQDV0');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0c0e14">
@@ -10,15 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="しちゅーず開発室">
-  <meta property="og:title" content="SEKI — しちゅーず開発室">
+  <meta property="og:title" content="SEKI — 11×11の対戦ボードゲーム">
   <meta property="og:description" content="11×11マスの対戦ボードゲームです。CPU、同じスマホを挟んだ相手、オンラインの相手と指します。">
   <meta property="og:url" content="https://stew0428-sketch.github.io/shichuzu/seki.html">
   <meta property="og:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/seki-home.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SEKI — しちゅーず開発室">
+  <meta name="twitter:title" content="SEKI — 11×11の対戦ボードゲーム">
   <meta name="twitter:description" content="11×11マスの対戦ボードゲームです。CPU、同じスマホを挟んだ相手、オンラインの相手と指します。">
   <meta name="twitter:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/seki-home.jpg">
-  <title>SEKI — しちゅーず開発室</title>
+  <title>SEKI — 11×11の対戦ボードゲーム</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,12 +44,37 @@
     "image": "https://stew0428-sketch.github.io/shichuzu/assets/shots/seki-home.jpg",
     "url": "https://stew0428-sketch.github.io/shichuzu/seki.html",
     "downloadUrl": "https://play.google.com/store/apps/details?id=com.kingsclash.game",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
     "inLanguage": "ja",
     "author": {
       "@type": "Organization",
       "name": "しちゅーず開発室",
       "url": "https://stew0428-sketch.github.io/shichuzu/"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ひとりでも指せますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CPU対戦があります。同じスマホを挟んだ相手、オンラインの相手とも指せます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "盤は何マスですか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "11×11マスです。赤と青が、それぞれキングを中心に駒を並べて指します。"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -69,9 +103,51 @@
       </video>
       <p>対局中の盤です。上が赤、下が青で、それぞれキングを中心に駒が並んでいます。上の「市民の損害」と、下の棋譜で、いま何手目で何が動いたかが分かります。</p>
     </section>
+    <section class="body">
+      <h2>勝ち方は2つ</h2>
+      <p>相手のキングを取るか、相手の市民を6人討つと勝ちです。市民は動けないので、守りながら攻めます。</p>
+      <h2>駒</h2>
+      <ul class="points">
+        <li>キング：全方向に1マス。相手の駒を倒すと、スカウトをランクアップできます。</li>
+        <li>英雄：キングの前に立つ3人。敵を倒すと、仲間をレベルアップできます。</li>
+        <li>キャプテン：盾を構え、全方向に3マス進む最強の駒です。</li>
+        <li>ソルジャー：弓を持ち、全方向に2マス進む主力です。</li>
+        <li>スカウト：前後に2マス。相手の陣地の端まで行くと進化します。</li>
+        <li>市民：動けません。6人討たれると負けです。</li>
+      </ul>
+      <h2>対戦モード</h2>
+      <ul class="points">
+        <li>CPU対戦：30人の相手と、レベルの順に戦います。2周目からは全員が最強レベルです。</li>
+        <li>2人対戦：1台のスマホを挟んで指します。相手側の表示は上下が逆になります。</li>
+        <li>レーティング対戦：オンラインで相手を探し、勝敗でレートが動きます。1手30秒の持ち時間で、ランキングもあります。</li>
+      </ul>
+      <p>城壁や草原などの盤面と、駒のデザインを選べます。動きのアニメーションと効果音も設定で変えられます。</p>
+      <h2>こんな人に</h2>
+      <ul class="points">
+        <li>チェスや将棋が好きで、もっと手軽に短く遊びたい</li>
+        <li>盤の上で駒を育てる遊びをしてみたい</li>
+        <li>1台のスマホで、友達や家族と対戦したい</li>
+      </ul>
+    </section>
     <div class="actions">
       <a class="btn btn-seal" href="join.html?app=seki">テストに参加する</a>
     </div>
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <h3>ひとりでも指せますか</h3>
+      <p>CPU対戦があります。同じスマホを挟んだ相手、オンラインの相手とも指せます。</p>
+      <h3>盤は何マスですか</h3>
+      <p>11×11マスです。赤と青が、それぞれキングを中心に駒を並べて指します。</p>
+    </section>
+    <nav class="also" aria-label="ほかのアプリ">
+      <h2>ほかのアプリ</h2>
+      <ul>
+        <li><a href="effera.html">Effera</a><span>テロップとエフェクトを、指で動画に載せる</span></li>
+        <li><a href="library.html">不思議の図書館</a><span>学年や級を選ぶと、その漢字の小説が出る</span></li>
+        <li><a href="music.html">FretDrop</a><span>譜面に合わせて弾き、マイクで音程を見る</span></li>
+        <li><a href="fon.html">FON</a><span>見えた5手に、裏の2手を差し込んで読み合う</span></li>
+      </ul>
+    </nav>
     </main>
   </div>
 </body>

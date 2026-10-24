@@ -111,7 +111,7 @@ h1 {
 }
 
 .app img {
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 4;
   width: 64px;
   height: 64px;
   border-radius: 16px;
@@ -162,6 +162,13 @@ h1 {
 }
 
 .app .btn { grid-column: 1 / -1; margin-top: 8px; }
+
+.app .genre {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
 
 .mast {
   position: relative;
@@ -231,6 +238,13 @@ h1 {
 
 .shots::-webkit-scrollbar { display: none; }
 
+.shots a {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.shots--top img { height: 240px; }
+
 .shots img {
   height: 280px;
   width: auto;
@@ -284,6 +298,15 @@ h1 {
 }
 
 .body > p { margin: 10px 0 0; font-size: 14.5px; }
+
+.body h2 {
+  margin: 22px 0 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.body h2:first-child { margin-top: 6px; }
 
 .points {
   margin: 14px 0 0;
@@ -435,6 +458,42 @@ h1 {
 }
 
 .faq a { color: var(--ink); }
+
+.also {
+  margin: 18px 16px 0;
+  padding: 4px 2px 0;
+}
+
+.also h2 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.also ul {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.also li {
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.also a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.also span {
+  display: block;
+  color: var(--muted);
+  font-size: 12.5px;
+  font-weight: 400;
+}
 
 .site-footer {
   padding: 22px 20px calc(22px + env(safe-area-inset-bottom));

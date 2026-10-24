@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0G8CTQDV0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q0G8CTQDV0');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0c0e14">
@@ -10,15 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="しちゅーず開発室">
-  <meta property="og:title" content="FON -Fist of Nations- — しちゅーず開発室">
+  <meta property="og:title" content="FON -Fist of Nations- — 読み合い型格闘ゲーム">
   <meta property="og:description" content="拳・蹴・投・閃・気の読み合い型格闘ゲームです。CPU、オンラインの相手、ルームの相手と戦います。">
   <meta property="og:url" content="https://stew0428-sketch.github.io/shichuzu/fon.html">
   <meta property="og:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/fon-title.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FON -Fist of Nations- — しちゅーず開発室">
+  <meta name="twitter:title" content="FON -Fist of Nations- — 読み合い型格闘ゲーム">
   <meta name="twitter:description" content="拳・蹴・投・閃・気の読み合い型格闘ゲームです。CPU、オンラインの相手、ルームの相手と戦います。">
   <meta name="twitter:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/fon-title.jpg">
-  <title>FON -Fist of Nations- — しちゅーず開発室</title>
+  <title>FON -Fist of Nations- — 読み合い型格闘ゲーム</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +45,37 @@
     "image": "https://stew0428-sketch.github.io/shichuzu/assets/shots/fon-title.jpg",
     "url": "https://stew0428-sketch.github.io/shichuzu/fon.html",
     "downloadUrl": "https://play.google.com/store/apps/details?id=com.jyanken.game",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
     "inLanguage": "ja",
     "author": {
       "@type": "Organization",
       "name": "しちゅーず開発室",
       "url": "https://stew0428-sketch.github.io/shichuzu/"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "どんな読み合いですか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "拳・蹴・投・閃・気の5手です。見えている手のあいだに裏の2手を差し込み、同じ順番の手同士でぶつかります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "誰と戦えますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CPU、オンラインの相手、ルームの相手と戦えます。"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -80,10 +114,51 @@
       <img src="assets/shots/fon-help.jpg" alt="操作説明。基本ルールと、拳・蹴・気の相性図">
       <p>操作説明です。基本ルールの下に、拳、蹴、気の相性図があります。赤い矢印は大ダメージ、青い矢印は小ダメージです。下にチュートリアルのボタンがあります。</p>
     </section>
+    <section class="body">
+      <h2>遊び方</h2>
+      <p>相手の5手が先に見えます。そのどこかに、相手の裏の2手が差し込まれています。自分も2手を好きな位置に差し込んで、7手の順番を作ります。差し込んだ位置から後ろは1つずつずれるので、ぶつかる手が変わります。</p>
+      <p>同じ番の手同士でぶつかり、体力が尽きたほうの負けです。体力が残っていれば、そのゲージのまま次の7手へ進みます。2セット先取で勝利です。</p>
+      <h2>5すくみの相性</h2>
+      <ul class="points">
+        <li>拳、蹴、投、閃、気の5手です。</li>
+        <li>隣の手には大ダメージ、ひとつ飛ばした手には小ダメージ、同じ手は相殺です。</li>
+        <li>連続で当てるとダメージが増え、4連続で必殺、5連続で確殺になります。</li>
+      </ul>
+      <h2>対戦とやり込み</h2>
+      <ul class="points">
+        <li>ひとりでCPUと戦えます。オンラインでは相手を探して対戦し、レートが動きます。</li>
+        <li>部屋コードを共有すれば、知り合いと対戦できます。このときレートと連勝は変わりません。</li>
+        <li>名前と国を設定すると、連勝とレートのランキングに国旗付きで載ります。</li>
+        <li>10人のキャラクターは、得意な手と苦手な手が違います。勝ってためたポイントで、衣装を買えます。</li>
+      </ul>
+      <h2>こんな人に</h2>
+      <ul class="points">
+        <li>じゃんけんの読み合いが好き</li>
+        <li>コマンド入力なしで、格闘ゲームの駆け引きを味わいたい</li>
+        <li>すき間の時間に、1試合だけ対戦したい</li>
+      </ul>
+      <p>横画面で遊びます。対戦結果の画面に広告が出ます。ポイント2倍と、負けたときのポイント減少の回避は、広告を見ると選んだときだけです。</p>
+    </section>
     <div class="actions">
       <a class="btn btn-seal" href="join.html?app=fon">テストに参加する</a>
       <a class="btn btn-ink" href="https://play.google.com/store/apps/details?id=com.jyanken.game">Google Play を開く</a>
     </div>
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <h3>どんな読み合いですか</h3>
+      <p>拳・蹴・投・閃・気の5手です。見えている手のあいだに裏の2手を差し込み、同じ順番の手同士でぶつかります。</p>
+      <h3>誰と戦えますか</h3>
+      <p>CPU、オンラインの相手、ルームの相手と戦えます。</p>
+    </section>
+    <nav class="also" aria-label="ほかのアプリ">
+      <h2>ほかのアプリ</h2>
+      <ul>
+        <li><a href="effera.html">Effera</a><span>テロップとエフェクトを、指で動画に載せる</span></li>
+        <li><a href="seki.html">SEKI</a><span>CPUやオンラインの相手と、11×11で指す</span></li>
+        <li><a href="library.html">不思議の図書館</a><span>学年や級を選ぶと、その漢字の小説が出る</span></li>
+        <li><a href="music.html">FretDrop</a><span>譜面に合わせて弾き、マイクで音程を見る</span></li>
+      </ul>
+    </nav>
     </main>
   </div>
 </body>

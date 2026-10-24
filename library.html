@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0G8CTQDV0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q0G8CTQDV0');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0c0e14">
@@ -10,15 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="しちゅーず開発室">
-  <meta property="og:title" content="不思議の図書館 — しちゅーず開発室">
+  <meta property="og:title" content="不思議の図書館 — 漢字のレベルに合わせた小説">
   <meta property="og:description" content="漢字のレベルに合わせて小説を読むアプリです。学年や級を選ぶと、その範囲で書かれた話が出てきます。">
   <meta property="og:url" content="https://stew0428-sketch.github.io/shichuzu/library.html">
   <meta property="og:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/library.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="不思議の図書館 — しちゅーず開発室">
+  <meta name="twitter:title" content="不思議の図書館 — 漢字のレベルに合わせた小説">
   <meta name="twitter:description" content="漢字のレベルに合わせて小説を読むアプリです。学年や級を選ぶと、その範囲で書かれた話が出てきます。">
   <meta name="twitter:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/library.jpg">
-  <title>不思議の図書館 — しちゅーず開発室</title>
+  <title>不思議の図書館 — 漢字のレベルに合わせた小説</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,12 +44,37 @@
     "image": "https://stew0428-sketch.github.io/shichuzu/assets/shots/library.jpg",
     "url": "https://stew0428-sketch.github.io/shichuzu/library.html",
     "downloadUrl": "https://play.google.com/store/apps/details?id=com.mkbooks.library",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
     "inLanguage": "ja",
     "author": {
       "@type": "Organization",
       "name": "しちゅーず開発室",
       "url": "https://stew0428-sketch.github.io/shichuzu/"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "まだ習っていない漢字は出てきますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "出てきません。選んだ学年や級までの漢字で書かれ、それより先の漢字はひらがなになります。読めない漢字は、タップすると読みが出ます。タップした漢字は記録され、次に作る本で多めに使われます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "文章は誰が書いていますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本を開くと、文章がAIで作られているという注意が出ます。"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -71,9 +105,44 @@
       <img src="assets/shots/lib-reader.jpg" alt="ひらがな中心の本文。一部の漢字だけが青い">
       <p>本文です。上に「10級 / 横書き」と出ていて、文はひらがな中心、一部の漢字だけが青字です。右上の Aa で文字の大きさを変え、下のボタンで前の章と次の章に移ります。</p>
     </section>
+    <section class="body">
+      <h2>読める漢字で、読める本を</h2>
+      <p>学年や漢字の級を選ぶと、その範囲の漢字で書かれた物語が出てきます。級は10級から1級まであり、「指定なし」も選べます。低い級ではひらがなが多く、上がるほど漢字が増えます。</p>
+      <h2>できること</h2>
+      <ul class="points">
+        <li>漢字をタップすると読みが出ます。単語の意味も調べられます。</li>
+        <li>縦書きと横書き、文字の大きさを切り替えられます。</li>
+        <li>読んだ漢字は「漢字の記録」に残ります。選んだ級の漢字一覧と見比べられます。</li>
+        <li>館の案内役と話せます。案内役は変えられます。</li>
+        <li>できた本は、近くの端末へ Bluetooth や Wi-Fi で直接渡せます。</li>
+      </ul>
+      <h2>こんな人に</h2>
+      <ul class="points">
+        <li>漢字の練習を、ドリルではなく読書でしたい</li>
+        <li>級に合わせて、読める漢字を少しずつ増やしたい</li>
+        <li>日本語を学んでいて、知っている漢字の範囲で物語を読みたい</li>
+      </ul>
+      <p>物語、単語の意味、案内役の会話は、AI が書きます。生成には、自分で取った Gemini の API キーを使います。メモリが8GB以上の端末では、端末の中で生成する方法も選べます。AI の文章には、誤りや不自然な表現が混ざることがあります。</p>
+    </section>
     <div class="actions">
       <a class="btn btn-seal" href="join.html?app=library">テストに参加する</a>
     </div>
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <h3>まだ習っていない漢字は出てきますか</h3>
+      <p>出てきません。選んだ学年や級までの漢字で書かれ、それより先の漢字はひらがなになります。読めない漢字は、タップすると読みが出ます。タップした漢字は記録され、次に作る本で多めに使われます。</p>
+      <h3>文章は誰が書いていますか</h3>
+      <p>本を開くと、文章がAIで作られているという注意が出ます。</p>
+    </section>
+    <nav class="also" aria-label="ほかのアプリ">
+      <h2>ほかのアプリ</h2>
+      <ul>
+        <li><a href="effera.html">Effera</a><span>テロップとエフェクトを、指で動画に載せる</span></li>
+        <li><a href="seki.html">SEKI</a><span>CPUやオンラインの相手と、11×11で指す</span></li>
+        <li><a href="music.html">FretDrop</a><span>譜面に合わせて弾き、マイクで音程を見る</span></li>
+        <li><a href="fon.html">FON</a><span>見えた5手に、裏の2手を差し込んで読み合う</span></li>
+      </ul>
+    </nav>
     </main>
   </div>
 </body>

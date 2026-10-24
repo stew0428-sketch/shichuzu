@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0G8CTQDV0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q0G8CTQDV0');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0c0e14">
@@ -10,15 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="しちゅーず開発室">
-  <meta property="og:title" content="FretDrop — しちゅーず開発室">
+  <meta property="og:title" content="FretDrop — ギターの練習アプリ">
   <meta property="og:description" content="ギターの練習アプリです。曲やステップアップを選んで弾き、マイクで音程が合っているかを見ます。チューナーもあります。">
   <meta property="og:url" content="https://stew0428-sketch.github.io/shichuzu/music.html">
   <meta property="og:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/music-songs.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FretDrop — しちゅーず開発室">
+  <meta name="twitter:title" content="FretDrop — ギターの練習アプリ">
   <meta name="twitter:description" content="ギターの練習アプリです。曲やステップアップを選んで弾き、マイクで音程が合っているかを見ます。チューナーもあります。">
   <meta name="twitter:image" content="https://stew0428-sketch.github.io/shichuzu/assets/shots/music-songs.jpg">
-  <title>FretDrop — しちゅーず開発室</title>
+  <title>FretDrop — ギターの練習アプリ</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316130f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c5362b' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,12 +44,37 @@
     "image": "https://stew0428-sketch.github.io/shichuzu/assets/shots/music-songs.jpg",
     "url": "https://stew0428-sketch.github.io/shichuzu/music.html",
     "downloadUrl": "https://play.google.com/store/apps/details?id=com.practicingmusic.practicing_music",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
     "inLanguage": "ja",
     "author": {
       "@type": "Organization",
       "name": "しちゅーず開発室",
       "url": "https://stew0428-sketch.github.io/shichuzu/"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "初心者でも練習できますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ステップアップは「1. 6弦を鳴らす」から始まります。曲の画面には初心者モードもあります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "チューナーはありますか",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "6弦から1弦へ、E2、A2、D3、G3、B3、E4の標準チューニングで合わせられます。"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -75,9 +109,43 @@
       <img src="assets/shots/music-tuner.jpg" alt="チューナー。6弦から1弦の音名と、A#1 60.0 Hz">
       <p>チューナーです。6弦から1弦まで E2、A2、D3、G3、B3、E4 が並び、いま拾っている音は A#1、60.0 Hz です。「順番に調律を開始（6弦→1弦）」で、その順に合わせていきます。下には「標準チューニング: E2 A2 D3 G3 B3 E4」とあります。</p>
     </section>
+    <section class="body">
+      <h2>できること</h2>
+      <ul class="points">
+        <li>流れてくるノーツと指板の表示に合わせて弾くと、マイクが音程を聴き取って判定します。</li>
+        <li>曲ごとに、フルコンボとフルパーフェクトの記録が残ります。</li>
+        <li>初心者モード、ノーツの速度、テンポ、マイク感度を変えられます。「デモ」でお手本を聴けます。</li>
+        <li>ステップアップは「6弦を鳴らす」から始まり、番号が進むほど速く、高いフレットへ、細かいリズムになります。</li>
+        <li>標準チューニング（E2 A2 D3 G3 B3 E4）のチューナーがあります。6弦から順に合わせられます。</li>
+        <li>MusicXML、カメラで撮った楽譜、画像、PDF から、練習用の曲を作れます。文字の読み取りは端末の中で行い、曲は50曲まで保存できます。</li>
+      </ul>
+      <h2>こんな人に</h2>
+      <ul class="points">
+        <li>ギターを始めたばかりで、何から練習すればいいか分からない</li>
+        <li>手元の楽譜を、そのまま練習用の曲にしたい</li>
+        <li>練習とチューニングを、1つのアプリで済ませたい</li>
+      </ul>
+      <p>アカウント登録は要りません。マイクの音は音程を調べるためだけに使い、録音として保存しません。画面にバナー広告が出ます。</p>
+    </section>
     <div class="actions">
       <a class="btn btn-seal" href="join.html?app=music">テストに参加する</a>
     </div>
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <h3>初心者でも練習できますか</h3>
+      <p>ステップアップは「1. 6弦を鳴らす」から始まります。曲の画面には初心者モードもあります。</p>
+      <h3>チューナーはありますか</h3>
+      <p>6弦から1弦へ、E2、A2、D3、G3、B3、E4の標準チューニングで合わせられます。</p>
+    </section>
+    <nav class="also" aria-label="ほかのアプリ">
+      <h2>ほかのアプリ</h2>
+      <ul>
+        <li><a href="effera.html">Effera</a><span>テロップとエフェクトを、指で動画に載せる</span></li>
+        <li><a href="seki.html">SEKI</a><span>CPUやオンラインの相手と、11×11で指す</span></li>
+        <li><a href="library.html">不思議の図書館</a><span>学年や級を選ぶと、その漢字の小説が出る</span></li>
+        <li><a href="fon.html">FON</a><span>見えた5手に、裏の2手を差し込んで読み合う</span></li>
+      </ul>
+    </nav>
     </main>
   </div>
 </body>
